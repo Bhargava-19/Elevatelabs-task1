@@ -1,0 +1,46 @@
+# Nmap 7.95 scan initiated Mon Sep 22 11:15:00 2025 as: /usr/lib/nmap/nmap -sS -sV -O -oN host_nmap.txt 127.0.0.1
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.000069s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT     STATE SERVICE   VERSION
+443/tcp  open  ssl/https
+9200/tcp open  ssl/http  Amazon OpenSearch REST API (Basic auth)
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port443-TCP:V=7.95%T=SSL%I=7%D=9/22%Time=68D16801%P=x86_64-pc-linux-gnu
+SF:%r(GetRequest,154,"HTTP/1\.1\x20302\x20Found\r\nlocation:\x20/app/login
+SF:\?\r\nosd-name:\x20kali\r\nx-frame-options:\x20sameorigin\r\ncache-cont
+SF:rol:\x20private,\x20no-cache,\x20no-store,\x20must-revalidate\r\nset-co
+SF:okie:\x20security_authentication=;\x20Max-Age=0;\x20Expires=Thu,\x2001\
+SF:x20Jan\x201970\x2000:00:00\x20GMT;\x20Secure;\x20HttpOnly;\x20Path=/\r\
+SF:ncontent-length:\x200\r\nDate:\x20Mon,\x2022\x20Sep\x202025\x2015:15:13
+SF:\x20GMT\r\nConnection:\x20close\r\n\r\n")%r(HTTPOptions,13B,"HTTP/1\.1\
+SF:x20404\x20Not\x20Found\r\nosd-name:\x20kali\r\nx-frame-options:\x20same
+SF:origin\r\ncontent-type:\x20application/json;\x20charset=utf-8\r\ncache-
+SF:control:\x20private,\x20no-cache,\x20no-store,\x20must-revalidate\r\nco
+SF:ntent-length:\x2060\r\nDate:\x20Mon,\x2022\x20Sep\x202025\x2015:15:13\x
+SF:20GMT\r\nConnection:\x20close\r\n\r\n{\"statusCode\":404,\"error\":\"No
+SF:t\x20Found\",\"message\":\"Not\x20Found\"}")%r(FourOhFourRequest,1C1,"H
+SF:TTP/1\.1\x20401\x20Unauthorized\r\nosd-name:\x20kali\r\nx-frame-options
+SF::\x20sameorigin\r\ncontent-type:\x20application/json;\x20charset=utf-8\
+SF:r\ncache-control:\x20private,\x20no-cache,\x20no-store,\x20must-revalid
+SF:ate\r\nset-cookie:\x20security_authentication=;\x20Max-Age=0;\x20Expire
+SF:s=Thu,\x2001\x20Jan\x201970\x2000:00:00\x20GMT;\x20Secure;\x20HttpOnly;
+SF:\x20Path=/\r\ncontent-length:\x2077\r\nDate:\x20Mon,\x2022\x20Sep\x2020
+SF:25\x2015:15:13\x20GMT\r\nConnection:\x20close\r\n\r\n{\"statusCode\":40
+SF:1,\"error\":\"Unauthorized\",\"message\":\"Authentication\x20required\"
+SF:}")%r(tor-versions,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(R
+SF:TSPRequest,13B,"HTTP/1\.1\x20404\x20Not\x20Found\r\nosd-name:\x20kali\r
+SF:\nx-frame-options:\x20sameorigin\r\ncontent-type:\x20application/json;\
+SF:x20charset=utf-8\r\ncache-control:\x20private,\x20no-cache,\x20no-store
+SF:,\x20must-revalidate\r\ncontent-length:\x2060\r\nDate:\x20Mon,\x2022\x2
+SF:0Sep\x202025\x2015:15:18\x20GMT\r\nConnection:\x20close\r\n\r\n{\"statu
+SF:sCode\":404,\"error\":\"Not\x20Found\",\"message\":\"Not\x20Found\"}")%
+SF:r(SSLSessionReq,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n");
+Device type: general purpose
+Running: Linux 2.6.X|5.X
+OS CPE: cpe:/o:linux:linux_kernel:2.6.32 cpe:/o:linux:linux_kernel:5 cpe:/o:linux:linux_kernel:6
+OS details: Linux 2.6.32, Linux 5.0 - 6.2
+Network Distance: 0 hops
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Sep 22 11:15:24 2025 -- 1 IP address (1 host up) scanned in 24.62 seconds

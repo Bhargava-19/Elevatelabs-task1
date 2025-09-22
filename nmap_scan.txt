@@ -1,0 +1,32 @@
+# Nmap 7.95 scan initiated Mon Sep 22 11:10:08 2025 as: /usr/lib/nmap/nmap --privileged -sS -oN nmap_scan.txt 10.0.2.4/24
+Nmap scan report for 10.0.2.1
+Host is up (0.0014s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT   STATE SERVICE
+53/tcp open  domain
+MAC Address: 52:54:00:12:35:00 (QEMU virtual NIC)
+
+Nmap scan report for 10.0.2.2
+Host is up (0.0026s latency).
+Not shown: 995 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+135/tcp  open  msrpc
+445/tcp  open  microsoft-ds
+2323/tcp open  3d-nfsd
+7778/tcp open  interwise
+8080/tcp open  http-proxy
+MAC Address: 52:54:00:12:35:00 (QEMU virtual NIC)
+
+Nmap scan report for 10.0.2.3
+Host is up (0.00054s latency).
+All 1000 scanned ports on 10.0.2.3 are in ignored states.
+Not shown: 1000 filtered tcp ports (proto-unreach)
+MAC Address: 08:00:27:DB:07:A8 (PCS Systemtechnik/Oracle VirtualBox virtual NIC)
+
+Nmap scan report for 10.0.2.4
+Host is up (0.0000090s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT    STATE SERVICE
+443/tcp open  https
+
+# Nmap done at Mon Sep 22 11:10:24 2025 -- 256 IP addresses (4 hosts up) scanned in 16.14 seconds
